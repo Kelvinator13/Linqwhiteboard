@@ -16,12 +16,13 @@ namespace LinqProblems
 
         public void Run()
         {
-            var wordsthatcontainth = words.Where(w => w.Contains("th"));
+            var wordscontainingth = words.Where(w => w.Contains("th"));
+            Console.WriteLine(wordscontainingth);
         }
 
-
-       
-           
+        internal void wordscontainingth()
+        {
+            throw new NotImplementedException();
+        }
     }
-  
 }

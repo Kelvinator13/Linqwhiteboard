@@ -12,16 +12,12 @@ namespace LinqProblems
         {
             List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
             
-             public void RemoveDuplicate() 
-            {
                 var name = names.OrderBy(a => new string(a.ToCharArray())).Distinct();
                 foreach (var n in name)
                 {
                     Console.WriteLine(n);
                 }
-            }
-        }
-       
+        } 
     }          
 }
 
